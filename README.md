@@ -2,7 +2,7 @@
 
 ![](https://komarev.com/ghpvc/?username=gsmoon97&style=flat-square)
 
-<h3 align="center">LLM Training Operations Specialist @ ByteDance | Incoming MSCS @ Columbia University</h5>
+<h3 align="center">MSCS @ Columbia University | ML Engineer | LLM Training & Evaluation</h5>
 
 <p align="center">
    <a href="https://linkedin.com/in/gsmoon97" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gsmoon97" height="30" width="40" /></a>
