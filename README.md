@@ -1,4 +1,4 @@
-<h1 align="center">Hi there 👋, I'm Geonsik Moon</h1>
+<h1 align="center">Hi there 👋 I'm Geonsik Moon</h1>
 
 ![](https://komarev.com/ghpvc/?username=gsmoon97&style=flat-square)
 
@@ -13,7 +13,7 @@
 
 ## 🎯 About Me
 
-I specialize in **Large Language Models (LLMs)** and **Natural Language Processing (NLP)**, with a focus on advancing the state-of-the-art in semantic understanding, timeline summarization, and grammatical error correction. My work bridges cutting-edge research (4 ACL publications) and production-grade systems, making AI accessible and practical. Last but not least, my first name "Geonsik" is pronounced as "Gun-Shik" or /kʌn.ɕik/.
+I specialize in **Large Language Models (LLMs)** and **Natural Language Processing (NLP)**, with a focus on advancing the state-of-the-art in downstream tasks such as semantic understanding, timeline summarization, and grammatical error correction. My work bridges cutting-edge research (4 ACL publications) and production-grade systems (ByteDance, Apple), making AI accessible and practical. Last but not least, my first name "Geonsik" is pronounced as "Gun-Shik" or /kʌn.ɕik/. You can also just call me "GS" 🙋🏻‍♂️
 
 ## 🚀 Core AI/ML Expertise
 
