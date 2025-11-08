@@ -19,20 +19,23 @@ I specialize in **Large Language Models (LLMs)** and **Natural Language Processi
 
 ### Large Language Models
 - **Fine-tuning & Optimization**: LoRA-based PEFT, 4-bit quantization, hyperparameter tuning with W&B
-- **Model Deployment**: vLLM serving, LangChain pipelines, ChromaDB integration
-- **Models**: Mistral, Llama 2/3, FLAN-T5, GPT family
+- **Model Deployment**: vLLM serving, LangChain pipelines, ChromaDB integration, AWS Bedrock inference
+- **Models**: Mistral, Llama 2/3, FLAN-T5, GPT family, OpenAI GPT-OSS-20B
+- **Structured Outputs**: Using instructor library with Pydantic models for reliable LLM responses
 - **Research**: Incremental clustering algorithms using LLM-based pairwise classification
 
 ### Natural Language Processing
 - **Grammatical Error Correction (GEC)**: Sequence-to-sequence & sequence tagging approaches
 - **Timeline Summarization (TLS)**: Event detection, clustering, and narrative construction
 - **Semantic Understanding**: Word Sense Disambiguation (WSD), Words-in-Context (WiC)
+- **Email Classification**: Topic-based email classification with RAG-enriched semantic search
 - **Transfer Learning**: Encoder-only vs. decoder-only architectures for semantic tasks
 
 ### Production ML Systems
-- **Scalable Web Applications**: Flask, Bootstrap, Docker containerization, LAMP stack
-- **Microservices Architecture**: GEC system with separate API and web interface modules
-- **Model Serving**: Production-grade deployment of transformer models for real-time inference
+- **Scalable Web Applications**: Flask, Streamlit, Bootstrap, Docker containerization, LAMP stack
+- **Microservices Architecture**: GEC system with separate API and web interface modules, email processing pipelines
+- **Model Serving**: Production-grade deployment of transformer models and LLMs for real-time inference
+- **RAG Pipelines**: Retrieval-Augmented Generation with vector embeddings for semantic search
 
 ## 💫 Featured Projects
 
@@ -40,25 +43,21 @@ I specialize in **Large Language Models (LLMs)** and **Natural Language Processi
 - Novel approach leveraging LLMs for incremental **event clustering** and **timeline construction** from text streams. Outperformed SOTA on 4 TLS benchmarks.
 - **Tech Stack**: `PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
 
-### Semantic Understanding with LLMs (ACL 2024 Findings) [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
+### Semantic Understanding with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
 - Comprehensive framework demonstrating encoder-only models outperform decoder-only LLMs on **word meaning comprehension** tasks.
 - **Tech Stack**: `PyTorch` `HuggingFace Transformers` `LoRA` `PEFT` `WandB`
 
-### ALLECS: Lightweight GEC System (EACL 2023 System Demo) [[`Code`](https://github.com/nusnlp/ALLECS) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)]
-- Production-ready web application serving **state-of-the-art GEC (Grammatical Error Correction) systems** with three base models and two system combination methods.
-- **Tech Stack**: `Flask` `PyTorch` `Docker` `Bootstrap` `MySQL`
-
-### WAMP: Writing Platform (IJCNLP-AACL 2023 System Demo) [[`Code`](https://github.com/nusnlp/WAMP) | [`Paper`](https://aclanthology.org/2023.ijcnlp-demo.8.pdf)]
-- **Annotation and marking platform** for educational writing applications.
-- **Tech Stack**: `Web Development` `NLP Pipeline` `Annotation Tools`
+### Email Prime: AI-Powered Email Classification & Summarization [[`Code`](https://github.com/Amazon-Bedrock-Innovation-Challenge/email-prime) | [`Live Demo`](https://github.com/user-attachments/assets/d190f941-0af7-40c7-887a-2807640d5a83)]
+- End-to-end email processing pipeline with Streamlit web UI for Gmail integration, intelligent topic classification using AWS Bedrock LLMs, and AI-generated email thread summaries. Features incremental processing, LLM-powered topic attribute generation, RAG-enriched classification with semantic search, and complete lifecycle management (create, view, delete projects).
+- **Tech Stack**: `Python` `Streamlit` `AWS Bedrock` `OpenAI GPT-OSS-20B` `instructor` `Pydantic` `Gmail API` `FAISS` `Amazon Titan Embeddings` `ChromaDB` `LangChain`
 
 ## 🗂️ Side Projects
 
-### LLM Agent Evaluation [[`code`](https://github.com/gsmoon97/swe-agent-eval)]
+### LLM Agent Evaluation [[`Code`](https://github.com/gsmoon97/swe-agent-eval)]
 - Research toolkit for **analyzing LLM agent trajectories** on software engineering tasks.
 - **Tech Stack**: `Jupyter` `Python` `Agent Frameworks`
 
-### Algorithm Practice [[`code`](https://github.com/gsmoon97/leetcode-101)]
+### Algorithm Practice [[`Code`](https://github.com/gsmoon97/leetcode-101)]
 - Self-contained archive of **LeetCode solutions** demonstrating strong algorithmic foundations.
 - **Tech Stack**: `Python` `Data Structures` `Algorithms`
 
@@ -86,11 +85,11 @@ I specialize in **Large Language Models (LLMs)** and **Natural Language Processi
    <a href="https://huggingface.co/" target="_blank"><img src="./assets/hf-logo.svg" alt="huggingface" width="40" height="40"/></a>
    <a href="https://openai.com/" target="_blank"><img src="./assets/openai.svg" alt="openai" width="40" height="40"/></a>
    <a href="https://www.anthropic.com/" target="_blank"><img src="./assets/anthropic.svg" alt="anthropic" width="40" height="40"/></a>
+   <a href="https://aws.amazon.com/bedrock/" target="_blank"><img src="./assets/bedrock-color.svg" alt="bedrock" width="40" height="40"/></a>
    <a href="https://www.ibm.com/watsonx" target="_blank"><img src="./assets/ibm.svg" alt="ibm" width="40" height="40"/></a>
    <a href="https://www.langchain.com/" target="_blank"><img src="./assets/langchain-color.svg" alt="langchain" width="40" height="40"/></a>
    <a href="https://www.llamaindex.ai/" target="_blank"><img src="./assets/llamaindex-color.svg" alt="llamaindex" width="40" height="40"/></a>
    <a href="https://github.com/vllm-project/vllm" target="_blank"><img src="./assets/vllm-color.svg" alt="vllm" width="40" height="40"/></a>
-   <a href="https://aws.amazon.com/bedrock/" target="_blank"><img src="./assets/bedrock-color.svg" alt="bedrock" width="40" height="40"/></a>
    <a href="https://spacy.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg" alt="spacy" width="80" height="40"/></a>
    <a href="https://www.nltk.org/" target="_blank"><img src="./assets/nltk.webp" alt="nltk" width="40" height="40"/></a>
    <a href="https://wandb.ai/" target="_blank"><img src="./assets/wandb-logo.svg" alt="wandb" width="80" height="40"/></a>
@@ -148,19 +147,19 @@ I specialize in **Large Language Models (LLMs)** and **Natural Language Processi
 
 1. **From Moments to Milestones: Incremental Timeline Summarization Leveraging Large Language Models**  
    *Qisheng Hu, **Geonsik Moon**, Hwee Tou Ng*  
-   ACL 2024 (Main Conference) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)
+   ACL 2024 (Main Conference) | [[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
 
 2. **Are Decoder-Only Language Models Better than Encoder-Only Language Models in Understanding Word Meaning?**  
    *Muhammad Qorib, **Geonsik Moon**, Hwee Tou Ng*  
-   ACL 2024 (Findings) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)
+   ACL 2024 (Findings) | [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
 
 3. **ALLECS: A Lightweight Language Error Correction System**  
    *Muhammad Reza Qorib, **Geonsik Moon**, Hwee Tou Ng*  
-   EACL 2023 (System Demonstrations) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)
+   EACL 2023 (System Demonstrations) | [[`Code`](https://github.com/nusnlp/ALLECS) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)]
 
 4. **WAMP: Writing, Annotation, and Marking Platform**  
    ***Geonsik Moon**, Muhammad Reza Qorib, Daniel Dahlmeier, Hwee Tou Ng*  
-   IJCNLP-AACL 2023 (System Demonstrations) | [`Paper`](https://aclanthology.org/2023.ijcnlp-demo.8.pdf)
+   IJCNLP-AACL 2023 (System Demonstrations) | [[`Code`](https://github.com/nusnlp/WAMP) | [`Paper`](https://aclanthology.org/2023.ijcnlp-demo.8.pdf)]
 
 ## 📫 Connect With Me
 
