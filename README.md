@@ -13,7 +13,7 @@
 
 ## 🎯 About Me
 
-I specialize in **Large Language Models (LLMs)** and **Natural Language Processing (NLP)**, with a focus on advancing the state-of-the-art in downstream tasks such as semantic understanding, timeline summarization, and grammatical error correction. My work bridges cutting-edge research (4 ACL publications) and production-grade systems (ByteDance, Apple), making AI accessible and practical. Last but not least, my first name "Geonsik" is pronounced as "Gun-Shik" or /kʌn.ɕik/. You can also just call me "GS" 🙋🏻‍♂️
+I specialize in **Large Language Models (LLMs)** and **Natural Language Processing (NLP)**, with a focus on advancing the state-of-the-art in downstream tasks such as timeline summarization, word semantic understanding, and grammatical error correction. My work bridges cutting-edge research (ACL publications) and production-grade systems (ByteDance, Apple), making AI accessible and practical. Last but not least, my first name "Geonsik" is pronounced as "Gun-Shik" or /kʌn.ɕik/. You can also just call me "GS" 🙋🏻‍♂️
 
 ## 🚀 Core AI/ML Expertise
 
@@ -39,27 +39,27 @@ I specialize in **Large Language Models (LLMs)** and **Natural Language Processi
 
 ## 💫 Featured Projects
 
+### Granite Speech Integration in the Foundation Model Stack (FMS) [[`PR`](https://github.com/foundation-model-stack/foundation-model-stack/pull/499) | [`Project Log`](https://github.com/columbia-hpml-granite)]
+- Integration of **Granite Speech model** into IBM's **Foundation Model Stack (FMS)**. Opened a PR to the main branch of the [official repository](https://github.com/foundation-model-stack/foundation-model-stack).
+- **Tech Stack**: `PyTorch` `FMS` `Granite-speech-3.3-8b` `Granite-speech-3.3-2b`
+
 ### Timeline Summarization with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
 - Novel approach leveraging LLMs for incremental **event clustering** and **timeline construction** from text streams. Outperformed SOTA on 4 TLS benchmarks.
 - **Tech Stack**: `PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
 
-### Semantic Understanding with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
-- Comprehensive framework demonstrating encoder-only models outperform decoder-only LLMs on **word meaning comprehension** tasks.
+### Word Semantic Understanding with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
+- Comprehensive framework demonstrating encoder-only models outperform decoder-only LLMs on **word semantic understanding** tasks.
 - **Tech Stack**: `PyTorch` `HuggingFace Transformers` `LoRA` `PEFT` `WandB`
+
+## 🗂️ Side Projects
 
 ### Email Prime: AI-Powered Email Classification & Summarization [[`Code`](https://github.com/Amazon-Bedrock-Innovation-Challenge/email-prime) | [`Live Demo`](https://github.com/user-attachments/assets/d190f941-0af7-40c7-887a-2807640d5a83)]
 - End-to-end email processing pipeline with Streamlit web UI for Gmail integration, intelligent topic classification using AWS Bedrock LLMs, and AI-generated email thread summaries. Features incremental processing, LLM-powered topic attribute generation, RAG-enriched classification with semantic search, and complete lifecycle management (create, view, delete projects).
-- **Tech Stack**: `Python` `Streamlit` `AWS Bedrock` `OpenAI GPT-OSS-20B` `instructor` `Pydantic` `Gmail API` `FAISS` `Amazon Titan Embeddings` `ChromaDB` `LangChain`
-
-## 🗂️ Side Projects
+- **Tech Stack**: `AWS Bedrock` `Python` `Streamlit` `OpenAI GPT-OSS-20B` `instructor` `Pydantic` `Gmail API` `FAISS` `Amazon Titan Embeddings` `ChromaDB` `LangChain`
 
 ### LLM Agent Evaluation [[`Code`](https://github.com/gsmoon97/swe-agent-eval)]
 - Research toolkit for **analyzing LLM agent trajectories** on software engineering tasks.
 - **Tech Stack**: `Jupyter` `Python` `Agent Frameworks`
-
-### Algorithm Practice [[`Code`](https://github.com/gsmoon97/leetcode-101)]
-- Self-contained archive of **LeetCode solutions** demonstrating strong algorithmic foundations.
-- **Tech Stack**: `Python` `Data Structures` `Algorithms`
 
 ## 🛠️ Technical Skills
 
