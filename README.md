@@ -1,170 +1,180 @@
-<h1 align="center">Hi there 👋 I'm Geonsik Moon</h1>
+<h1 align="center">Geonsik "GS" Moon</h1>
 
-![](https://komarev.com/ghpvc/?username=gsmoon97&style=flat-square)
-
-<h3 align="center">MSCS @ Columbia University | ML Engineer | LLM Training & Evaluation</h5>
+<p align="center"><code>AI Platform Developer @ IBM Research</code> · <code>ML Systems × Compilers</code> · <code>AI Inference Optimization</code></p>
 
 <p align="center">
    <a href="https://linkedin.com/in/gsmoon97" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gsmoon97" height="30" width="40" /></a>
-   <a href="https://gsmoon97.github.io" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Globe_icon_soft_black.svg" alt="website" height="30" width="40" /></a>
+   <a href="https://gsmoon97.github.io" target="blank"><img align="center" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f310.svg" alt="website" height="30" width="30" /></a>
    <a href="https://scholar.google.com/citations?user=si3AXV8AAAAJ" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="google-scholar" height="30" width="40" /></a>
    <a href="https://orcid.org/0009-0001-5646-466X" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="orcid" height="30" width="40" /></a>
+   &nbsp;<img src="https://komarev.com/ghpvc/?username=gsmoon97&style=flat-square&color=1d4ed8" alt="profile-views" />
 </p>
 
-## 🎯 About Me
+```console
+$ ssh gsmoon97@portfolio-os
+Welcome to PORTFOLIO_OS (GNU/Linux 6.1.0 aarch64)
 
-I specialize in **Large Language Models (LLMs)** and **Natural Language Processing (NLP)**, with a focus on advancing the state-of-the-art in downstream tasks such as timeline summarization, word semantic understanding, and grammatical error correction. My work bridges cutting-edge research (ACL publications) and production-grade systems (ByteDance, Apple), making AI accessible and practical. Last but not least, my first name "Geonsik" is pronounced as "Gun-Shik" or /kʌn.ɕik/. You can also just call me "GS" 🙋🏻‍♂️
+ [ OK ]  Mounted /dev/brain
+ [ OK ]  Started service: AI Platform Developer @ IBM Research
+ [ OK ]  Loaded backend: torch-spyre  (target: Spyre AIU accelerator)
+ [ OK ]  Reached target: AI Inference Optimization
+ [WARN]  impostor_syndrome.service masked — will not start
+ System ready. 1 recruiter session waiting on /dev/hire ...
 
-## 🚀 Core AI/ML Expertise
+$ whoami
+> "Geonsik" / "Gun-Shik" / "/kʌn.ɕik/" — call me "GS" 🙋🏻‍♂️
+```
 
-### Large Language Models
-- **Fine-tuning & Optimization**: LoRA-based PEFT, 4-bit quantization, hyperparameter tuning with W&B
-- **Model Deployment**: vLLM serving, LangChain pipelines, ChromaDB integration, AWS Bedrock inference
-- **Models**: Mistral, Llama 2/3, FLAN-T5, GPT family, OpenAI GPT-OSS-20B
-- **Structured Outputs**: Using instructor library with Pydantic models for reliable LLM responses
-- **Research**: Incremental clustering algorithms using LLM-based pairwise classification
+## `> ./about_me`
 
-### Natural Language Processing
-- **Grammatical Error Correction (GEC)**: Sequence-to-sequence & sequence tagging approaches
-- **Timeline Summarization (TLS)**: Event detection, clustering, and narrative construction
-- **Semantic Understanding**: Word Sense Disambiguation (WSD), Words-in-Context (WiC)
-- **Email Classification**: Topic-based email classification with RAG-enriched semantic search
-- **Transfer Learning**: Encoder-only vs. decoder-only architectures for semantic tasks
+I'm an **AI Platform Developer** building the systems layer that makes large models run **fast on real hardware**. My work sits where **ML compilers, model serving, and inference optimization** meet: I extend PyTorch's `torch.compile` stack, trace performance down to individual kernels, and turn that visibility into speed.
 
-### Production ML Systems
-- **Scalable Web Applications**: Flask, Streamlit, Bootstrap, Docker containerization, LAMP stack
-- **Microservices Architecture**: GEC system with separate API and web interface modules, email processing pipelines
-- **Model Serving**: Production-grade deployment of transformer models and LLMs for real-time inference
-- **RAG Pipelines**: Retrieval-Augmented Generation with vector embeddings for semantic search
+Right now I'm at **IBM Research** on **[torch-spyre](https://github.com/torch-spyre/torch-spyre)** — IBM's PyTorch backend for the **Spyre AI inference accelerator** — building compiler-level provenance so kernel hotspots can be attributed back to the exact source line that produced them.
 
-## 💫 Featured Projects
+That systems focus is grounded in a research background: **5 peer-reviewed papers** (ICLR / ACL / AACL / EACL) and hands-on **LLM training, evaluation, and NLP** at ByteDance, Apple, and NUS. I like problems where a paper-grade idea has to survive contact with a production pipeline.
 
-### Granite Speech Integration in the Foundation Model Stack (FMS) [[`PR`](https://github.com/foundation-model-stack/foundation-model-stack/pull/499) | [`Project Log`](https://github.com/columbia-hpml-granite)]
-- Integration of **Granite Speech model** into IBM's **Foundation Model Stack (FMS)**. Opened a PR to the main branch of the [official repository](https://github.com/foundation-model-stack/foundation-model-stack).
-- **Tech Stack**: `PyTorch` `FMS` `Granite-speech-3.3-8b` `Granite-speech-3.3-2b`
+## `> cat focus.md`
 
-### Timeline Summarization with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
-- Novel approach leveraging LLMs for incremental **event clustering** and **timeline construction** from text streams. Outperformed SOTA on 4 TLS benchmarks.
-- **Tech Stack**: `PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
+### 🛠️ ML Systems & Compilers
+- **PyTorch compilation stack** — `torch.compile` internals: TorchDynamo, AOTAutograd, and Inductor lowering to custom hardware backends
+- **Kernel-level performance** — source-to-kernel provenance, profiling, hotspot attribution, quantization, FlashAttention
+- **Hardware backends** — lowering ATen ops → optimized kernels for the Spyre AIU inference accelerator
 
-### Word Semantic Understanding with LLMs (ACL 2024) [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
-- Comprehensive framework demonstrating encoder-only models outperform decoder-only LLMs on **word semantic understanding** tasks.
-- **Tech Stack**: `PyTorch` `HuggingFace Transformers` `LoRA` `PEFT` `WandB`
+### ⚡ LLM Infrastructure & Inference
+- **Serving & runtimes** — vLLM, llama.cpp, Ollama; backend integration for accelerated inference
+- **Efficient adaptation** — LoRA / QLoRA / PEFT, 4-bit quantization for parameter-efficient fine-tuning
+- **RAG & orchestration** — LangChain / LangGraph pipelines, vector search over Chroma / Pinecone
 
-## 🗂️ Side Projects
+### 🧪 LLM Training, Evaluation & NLP
+- **Training-data & RL pipelines** — end-to-end data ops for code-generation and agentic RL benchmarks
+- **Agent evaluation** — failure-mode analysis and eval feedback loops for SWE agents; LM Eval Harness, W&B
+- **NLP research** — timeline summarization, lexical semantics, grammatical error correction (ACL / EACL / AACL)
 
-### Email Prime: AI-Powered Email Classification & Summarization [[`Code`](https://github.com/Amazon-Bedrock-Innovation-Challenge/email-prime) | [`Live Demo`](https://github.com/user-attachments/assets/d190f941-0af7-40c7-887a-2807640d5a83)]
-- End-to-end email processing pipeline with Streamlit web UI for Gmail integration, intelligent topic classification using AWS Bedrock LLMs, and AI-generated email thread summaries. Features incremental processing, LLM-powered topic attribute generation, RAG-enriched classification with semantic search, and complete lifecycle management (create, view, delete projects).
-- **Tech Stack**: `AWS Bedrock` `Python` `Streamlit` `OpenAI GPT-OSS-20B` `instructor` `Pydantic` `Gmail API` `FAISS` `Amazon Titan Embeddings` `ChromaDB` `LangChain`
+## `> ls featured/`
 
-### LLM Agent Evaluation [[`Code`](https://github.com/gsmoon97/swe-agent-eval)]
-- Research toolkit for **analyzing LLM agent trajectories** on software engineering tasks.
-- **Tech Stack**: `Jupyter` `Python` `Agent Frameworks`
+### `01`  torch-spyre — PyTorch backend for the Spyre AI accelerator  &nbsp;[[`Repo`](https://github.com/torch-spyre/torch-spyre) | [`Epic #2573`](https://github.com/torch-spyre/torch-spyre/issues/2573)]
+- Contributing to **IBM's open-source ML compiler stack** that lowers `torch.compile` graphs to optimized kernels for the **Spyre AIU inference accelerator**.
+- Built **source-to-kernel provenance**: a Phase-1 audit ([`PR #2720`](https://github.com/torch-spyre/torch-spyre/pull/2720), *merged*) that pinpointed where source attribution was dropped in the Inductor → `OpSpec` → SuperDSC path, then a `debug_handle` schema ([`PR #2945`](https://github.com/torch-spyre/torch-spyre/pull/2945), *in review*) threading each kernel back to its **PyTorch source line + ATen op** — the foundation for source-level inference-perf tuning.
+- **Tech Stack**: `PyTorch` `torch.compile` `Inductor` `AOTAutograd` `ATen` `Spyre AIU`
 
-## 🛠️ Technical Skills
+### `02`  Granite Speech → Foundation Model Stack (FMS)  &nbsp;[[`PR`](https://github.com/foundation-model-stack/foundation-model-stack/pull/499) | [`Project Log`](https://github.com/columbia-hpml-granite)]
+- Integrated the **Granite Speech 3.3** model into IBM's **[Foundation Model Stack](https://github.com/foundation-model-stack/foundation-model-stack)** — Conformer encoder, Q-Former projector, LoRA-adapted decoder — with `torch.compile` optimization. Opened a PR to the upstream repo.
+- **Tech Stack**: `PyTorch` `FMS` `Granite-Speech-3.3` `LoRA` `torch.compile`
 
-### Programming Languages
-<p align="left">
-   <a href="https://www.python.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
-   <a href="https://isocpp.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/></a>
-   <a href="https://go.dev/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg" alt="golang" width="40" height="40"/></a>
-   <a href="https://www.java.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a>
-   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
-</p>
+### `03`  AetherCode — Can LLMs win premier programming competitions? (ICLR 2026)  &nbsp;[[`Dataset`](https://huggingface.co/datasets/m-a-p/AetherCode) | [`Paper`](https://openreview.net/pdf?id=lSM6MtjQcM)]
+- Co-authored an **open-source competitive-programming benchmark** (released on Hugging Face) evaluating whether frontier LLMs can win IOI/ICPC-tier contests. Orchestrated data pipelines across 17K+ samples and 70+ annotators.
+- **Tech Stack**: `LLM Evaluation` `RL Benchmarks` `Hugging Face` `Multi-Agent Codegen`
 
-### Deep Learning & AI Frameworks
-<p align="left">
-   <a href="https://pytorch.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg" alt="pytorch" width="40" height="40"/></a>
-   <a href="https://www.tensorflow.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" width="40" height="40"/></a>
-   <a href="https://keras.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg" alt="keras" width="40" height="40"/></a>
-   <a href="https://github.com/google/jax" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Jax_logo_250px.png" alt="jax" width="60" height="40"/></a>
-</p>
+<details>
+<summary><b><code>› more research projects</code></b></summary>
 
-### LLM & NLP Ecosystem
-<p align="left">
-   <a href="https://huggingface.co/" target="_blank"><img src="./assets/hf-logo.svg" alt="huggingface" width="40" height="40"/></a>
-   <a href="https://openai.com/" target="_blank"><img src="./assets/openai.svg" alt="openai" width="40" height="40"/></a>
-   <a href="https://www.anthropic.com/" target="_blank"><img src="./assets/anthropic.svg" alt="anthropic" width="40" height="40"/></a>
-   <a href="https://aws.amazon.com/bedrock/" target="_blank"><img src="./assets/bedrock-color.svg" alt="bedrock" width="40" height="40"/></a>
-   <a href="https://www.ibm.com/watsonx" target="_blank"><img src="./assets/ibm.svg" alt="ibm" width="40" height="40"/></a>
-   <a href="https://www.langchain.com/" target="_blank"><img src="./assets/langchain-color.svg" alt="langchain" width="40" height="40"/></a>
-   <a href="https://www.llamaindex.ai/" target="_blank"><img src="./assets/llamaindex-color.svg" alt="llamaindex" width="40" height="40"/></a>
-   <a href="https://github.com/vllm-project/vllm" target="_blank"><img src="./assets/vllm-color.svg" alt="vllm" width="40" height="40"/></a>
-   <a href="https://spacy.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg" alt="spacy" width="80" height="40"/></a>
-   <a href="https://www.nltk.org/" target="_blank"><img src="./assets/nltk.webp" alt="nltk" width="40" height="40"/></a>
-   <a href="https://wandb.ai/" target="_blank"><img src="./assets/wandb-logo.svg" alt="wandb" width="80" height="40"/></a>
-</p>
+<br/>
 
-### Data Science & Analytics
-<p align="left">
-   <a href="https://pandas.pydata.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/></a>
-   <a href="https://numpy.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/></a>
-   <a href="https://matplotlib.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="40" height="40"/></a>
-   <a href="https://scikit-learn.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" width="40" height="40"/></a>
-</p>
+**Incremental Timeline Summarization with LLMs (ACL 2024, Main)** &nbsp;[[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
+- LLM-driven **incremental event clustering** and timeline construction from text streams; outperformed SOTA on 4 TLS benchmarks. &nbsp;`PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
 
-### Web Development
-<p align="left">
-   <a href="https://react.dev/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40" height="40"/></a>
-   <a href="https://www.djangoproject.com/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/></a>
-   <a href="https://flask.palletsprojects.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" alt="flask" width="40" height="40"/></a>
-   <a href="https://streamlit.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/></a>
-   <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"/></a>
-   <a href="https://nodejs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/></a>
-   <a href="https://getbootstrap.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="bootstrap" width="50" height="40"/></a>
-   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/></a>
-   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/></a>
-</p>
+**Encoder-only vs. Decoder-only for Word Meaning (ACL 2024, Findings)** &nbsp;[[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
+- Framework showing encoder-only models outperform decoder-only LLMs on **lexical semantic** tasks (WSD, WiC). &nbsp;`PyTorch` `Transformers` `LoRA` `PEFT` `W&B`
 
-### Cloud & Distributed Computing
-<p align="left">
-   <a href="https://aws.amazon.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/></a>
-   <a href="https://cloud.google.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="googlecloud" width="40" height="40"/></a>
-   <a href="https://azure.microsoft.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="azure" width="40" height="40"/></a>
-   <a href="https://www.docker.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a>
-   <a href="https://kubernetes.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg" alt="kubernetes" width="40" height="40"/></a>
-</p>
+</details>
 
-### Data Infrastructure & Processing
-<p align="left">
-   <a href="https://www.mysql.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" width="40" height="40"/></a>
-   <a href="https://www.postgresql.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="postgresql" width="40" height="40"/></a>
-   <a href="https://www.mongodb.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" width="40" height="40"/></a>
-   <a href="https://redis.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="redis" width="40" height="40"/></a>
-   <a href="https://www.trychroma.com/" target="_blank"><img src="./assets/chroma.webp" alt="chromadb" width="60" height="40"/></a>
-   <a href="https://www.pinecone.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Pinecone-Full-Logo-Black.svg" alt="pinecone" width="80" height="40"/></a>
-   <a href="https://spark.apache.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" alt="spark" width="40" height="40"/></a>
-   <a href="https://hadoop.apache.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/></a>
-</p>
+## `> ls side_projects/`
 
-### Tools & Version Control
-<p align="left">
-   <a href="https://git-scm.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/></a>
-   <a href="https://www.linux.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a>
-</p>
+### Email Prime — AI-powered email classification & summarization  &nbsp;[[`Code`](https://github.com/Amazon-Bedrock-Innovation-Challenge/email-prime) | [`Demo`](https://github.com/user-attachments/assets/d190f941-0af7-40c7-887a-2807640d5a83)]
+- End-to-end Gmail pipeline: topic classification via **AWS Bedrock** LLMs, RAG-enriched semantic search, and AI-generated thread summaries, with a Streamlit UI and structured outputs (`instructor` + Pydantic).
+- **Tech Stack**: `AWS Bedrock` `Streamlit` `instructor` `Pydantic` `Gmail API` `FAISS` `Titan Embeddings` `LangChain`
 
-## 📚 Publications
+### LLM Agent Evaluation  &nbsp;[[`Code`](https://github.com/gsmoon97/swe-agent-eval)]
+- Research toolkit for **analyzing LLM-agent trajectories** on software-engineering tasks — surfacing failure modes across thousands of runs.
+- **Tech Stack**: `Python` `Jupyter` `Agent Frameworks`
 
-1. **From Moments to Milestones: Incremental Timeline Summarization Leveraging Large Language Models**  
-   *Qisheng Hu, **Geonsik Moon**, Hwee Tou Ng*  
-   ACL 2024 (Main Conference) | [[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
+## `> nvidia-smi  # skills`
 
-2. **Are Decoder-Only Language Models Better than Encoder-Only Language Models in Understanding Word Meaning?**  
-   *Muhammad Qorib, **Geonsik Moon**, Hwee Tou Ng*  
-   ACL 2024 (Findings) | [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
+**Programming Languages**
 
-3. **ALLECS: A Lightweight Language Error Correction System**  
-   *Muhammad Reza Qorib, **Geonsik Moon**, Hwee Tou Ng*  
-   EACL 2023 (System Demonstrations) | [[`Code`](https://github.com/nusnlp/ALLECS) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)]
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-025E8C?style=flat-square&logo=postgresql&logoColor=white)
+
+**ML Frameworks**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+**ML Systems & Performance**
+
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![torch.compile](https://img.shields.io/badge/torch.compile-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TorchDynamo](https://img.shields.io/badge/TorchDynamo-1D4ED8?style=flat-square)
+![AOTAutograd](https://img.shields.io/badge/AOTAutograd-1D4ED8?style=flat-square)
+![Inductor](https://img.shields.io/badge/Inductor-1D4ED8?style=flat-square)
+![Profiling](https://img.shields.io/badge/Profiling-1D4ED8?style=flat-square)
+![Quantization](https://img.shields.io/badge/Quantization-1D4ED8?style=flat-square)
+![FlashAttention](https://img.shields.io/badge/FlashAttention-1D4ED8?style=flat-square)
+
+**LLM Training & Evaluation**
+
+![LoRA / PEFT](https://img.shields.io/badge/LoRA%20%2F%20PEFT-6D28D9?style=flat-square)
+![QLoRA](https://img.shields.io/badge/QLoRA-6D28D9?style=flat-square)
+![LM Eval Harness](https://img.shields.io/badge/LM%20Eval%20Harness-6D28D9?style=flat-square)
+![Weights & Biases](https://img.shields.io/badge/Weights%20&%20Biases-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black)
+
+**LLM Infrastructure**
+
+![vLLM](https://img.shields.io/badge/vLLM-30A2FF?style=flat-square)
+![llama.cpp](https://img.shields.io/badge/llama.cpp-1C1C1C?style=flat-square)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+![Chroma](https://img.shields.io/badge/Chroma-FEC925?style=flat-square)
+![Pinecone](https://img.shields.io/badge/Pinecone-1C1C1C?style=flat-square&logo=pinecone&logoColor=white)
+
+**Systems & DevOps**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+## `> git log --publications`
+
+1. **AetherCode: Evaluating LLMs' Ability to Win in Premier Programming Competitions**  
+   ICLR 2026 · [[`Dataset`](https://huggingface.co/datasets/m-a-p/AetherCode) | [`Paper`](https://openreview.net/pdf?id=lSM6MtjQcM)]
+
+2. **From Moments to Milestones: Incremental Timeline Summarization Leveraging Large Language Models**  
+   ACL 2024 (Main Conference) · [[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
+
+3. **Are Decoder-Only Language Models Better than Encoder-Only Language Models in Understanding Word Meaning?**  
+   ACL 2024 (Findings) · [[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
 
 4. **WAMP: Writing, Annotation, and Marking Platform**  
-   ***Geonsik Moon**, Muhammad Reza Qorib, Daniel Dahlmeier, Hwee Tou Ng*  
-   IJCNLP-AACL 2023 (System Demonstrations) | [[`Code`](https://github.com/nusnlp/WAMP) | [`Paper`](https://aclanthology.org/2023.ijcnlp-demo.8.pdf)]
+   IJCNLP-AACL 2023 (System Demonstrations) · [[`Code`](https://github.com/nusnlp/WAMP) | [`Paper`](https://aclanthology.org/2023.ijcnlp-demo.8.pdf)]
 
-## 📫 Connect With Me
+5. **ALLECS: A Lightweight Language Error Correction System**  
+   EACL 2023 (System Demonstrations) · [[`Code`](https://github.com/nusnlp/ALLECS) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)]
 
-- 🌐 Website: [geonsikmoon.me](https://gsmoon97.github.io)
-- 💼 LinkedIn: [linkedin.com/in/gsmoon97](https://linkedin.com/in/gsmoon97)
-- 🎓 Google Scholar: [si3AXV8AAAA](https://scholar.google.com/citations?user=si3AXV8AAAAJ)
-- 🔬 ORCID: [0009-0001-5646-466X](https://orcid.org/0009-0001-5646-466X)
-- 📧 Based in: New York, NY
+## `> top  # github activity`
+
+<p align="center">
+   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=gsmoon97&hide_border=true&background=001133&stroke=1e40af&ring=38bdf8&fire=60a5fa&currStreakNum=c9d9ff&sideNums=c9d9ff&currStreakLabel=38bdf8&sideLabels=c9d9ff&dates=8ab4f8" alt="github-streak" />
+</p>
+
+## `> contact --help`
+
+```console
+$ cat /etc/gsmoon97/contact.conf
+  location   = New York, NY
+  website    = https://gsmoon97.github.io
+  linkedin   = https://linkedin.com/in/gsmoon97
+  scholar    = https://scholar.google.com/citations?user=si3AXV8AAAAJ
+  orcid      = https://orcid.org/0009-0001-5646-466X
+  status     = open to full-time roles (starting Jan 2027)
+
+$ echo "Ping me before my RAM gets overwritten."
+```
