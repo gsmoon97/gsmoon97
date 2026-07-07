@@ -25,7 +25,7 @@ $ whoami
 > "Geonsik" / "Gun-Shik" / "/kʌn.ɕik/" — call me "GS" 🙋🏻‍♂️
 ```
 
-## `> ./about_me`
+## `> source ./about_me`
 
 I'm an **AI Platform Developer** building the systems layer that makes large models run **fast on real hardware**. My work sits where **ML compilers, model serving, and inference optimization** meet: I extend PyTorch's `torch.compile` stack, trace performance down to individual kernels, and turn that visibility into speed.
 
@@ -33,7 +33,7 @@ Right now I'm at **IBM Research** on **[torch-spyre](https://github.com/torch-sp
 
 That systems focus is grounded in a research background: **5 peer-reviewed papers** (ICLR / ACL / AACL / EACL) and hands-on **LLM training, evaluation, and NLP** at ByteDance, Apple, and NUS. I like problems where a paper-grade idea has to survive contact with a production pipeline.
 
-## `> cat focus.md`
+## `> cat ./focus.md`
 
 ### 🛠️ ML Systems & Compilers
 - **PyTorch compilation stack** — `torch.compile` internals: TorchDynamo, AOTAutograd, and Inductor lowering to custom hardware backends
@@ -50,7 +50,7 @@ That systems focus is grounded in a research background: **5 peer-reviewed paper
 - **Agent evaluation** — failure-mode analysis and eval feedback loops for SWE agents; LM Eval Harness, W&B
 - **NLP research** — timeline summarization, lexical semantics, grammatical error correction (ACL / EACL / AACL)
 
-## `> ls featured/`
+## `> ls ./featured_projects`
 
 ### `01`  torch-spyre — PyTorch backend for the Spyre AI accelerator  &nbsp;[[`Repo`](https://github.com/torch-spyre/torch-spyre) | [`Epic #2573`](https://github.com/torch-spyre/torch-spyre/issues/2573)]
 - Contributing to **IBM's open-source ML compiler stack** that lowers `torch.compile` graphs to optimized kernels for the **Spyre AIU inference accelerator**.
@@ -65,20 +65,15 @@ That systems focus is grounded in a research background: **5 peer-reviewed paper
 - Co-authored an **open-source competitive-programming benchmark** (released on Hugging Face) evaluating whether frontier LLMs can win IOI/ICPC-tier contests. Orchestrated data pipelines across 17K+ samples and 70+ annotators.
 - **Tech Stack**: `LLM Evaluation` `RL Benchmarks` `Hugging Face` `Multi-Agent Codegen`
 
-<details>
-<summary><b><code>› more research projects</code></b></summary>
+### `04`  Incremental Timeline Summarization with LLMs (ACL 2024, Main)  &nbsp;[[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
+- LLM-driven **incremental event clustering** and timeline construction from text streams; outperformed SOTA on 4 TLS benchmarks.
+- **Tech Stack**: `PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
 
-<br/>
+### `05`  Encoder-only vs. Decoder-only for Word Meaning (ACL 2024, Findings)  &nbsp;[[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
+- Framework showing encoder-only models outperform decoder-only LLMs on **lexical semantic** tasks (WSD, WiC).
+- **Tech Stack**: `PyTorch` `Transformers` `LoRA` `PEFT` `W&B`
 
-**Incremental Timeline Summarization with LLMs (ACL 2024, Main)** &nbsp;[[`Code`](https://github.com/gsmoon97/LLM-TLS) | [`Paper`](https://aclanthology.org/2024.acl-long.390/)]
-- LLM-driven **incremental event clustering** and timeline construction from text streams; outperformed SOTA on 4 TLS benchmarks. &nbsp;`PyTorch` `vLLM` `Llama-2-13B` `LangChain` `ChromaDB`
-
-**Encoder-only vs. Decoder-only for Word Meaning (ACL 2024, Findings)** &nbsp;[[`Code`](https://github.com/gsmoon97/llm-semantic-understanding) | [`Paper`](https://aclanthology.org/2024.findings-acl.967/)]
-- Framework showing encoder-only models outperform decoder-only LLMs on **lexical semantic** tasks (WSD, WiC). &nbsp;`PyTorch` `Transformers` `LoRA` `PEFT` `W&B`
-
-</details>
-
-## `> ls side_projects/`
+## `ls ./side_projects`
 
 ### Email Prime — AI-powered email classification & summarization  &nbsp;[[`Code`](https://github.com/Amazon-Bedrock-Innovation-Challenge/email-prime) | [`Demo`](https://github.com/user-attachments/assets/d190f941-0af7-40c7-887a-2807640d5a83)]
 - End-to-end Gmail pipeline: topic classification via **AWS Bedrock** LLMs, RAG-enriched semantic search, and AI-generated thread summaries, with a Streamlit UI and structured outputs (`instructor` + Pydantic).
@@ -88,7 +83,7 @@ That systems focus is grounded in a research background: **5 peer-reviewed paper
 - Research toolkit for **analyzing LLM-agent trajectories** on software-engineering tasks — surfacing failure modes across thousands of runs.
 - **Tech Stack**: `Python` `Jupyter` `Agent Frameworks`
 
-## `> nvidia-smi  # skills`
+## `> cat ./skills.md`
 
 **Programming Languages**
 
@@ -142,7 +137,7 @@ That systems focus is grounded in a research background: **5 peer-reviewed paper
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## `> git log --publications`
+## `> head -5 ./publications.md`
 
 1. **AetherCode: Evaluating LLMs' Ability to Win in Premier Programming Competitions**  
    ICLR 2026 · [[`Dataset`](https://huggingface.co/datasets/m-a-p/AetherCode) | [`Paper`](https://openreview.net/pdf?id=lSM6MtjQcM)]
@@ -158,12 +153,6 @@ That systems focus is grounded in a research background: **5 peer-reviewed paper
 
 5. **ALLECS: A Lightweight Language Error Correction System**  
    EACL 2023 (System Demonstrations) · [[`Code`](https://github.com/nusnlp/ALLECS) | [`Paper`](https://aclanthology.org/2023.eacl-demo.32/)]
-
-## `> top  # github activity`
-
-<p align="center">
-   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=gsmoon97&hide_border=true&background=001133&stroke=1e40af&ring=38bdf8&fire=60a5fa&currStreakNum=c9d9ff&sideNums=c9d9ff&currStreakLabel=38bdf8&sideLabels=c9d9ff&dates=8ab4f8" alt="github-streak" />
-</p>
 
 ## `> contact --help`
 
