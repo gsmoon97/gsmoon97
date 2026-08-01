@@ -1,4 +1,4 @@
-<h1 align="center">Geonsik "GS" Moon</h1>
+<h1 align="center">Geonsik (GS) Moon</h1>
 
 <p align="center"><code>AI Platform Developer @ IBM Research</code> · <code>ML Systems × Compilers</code> · <code>AI Inference Optimization</code></p>
 
